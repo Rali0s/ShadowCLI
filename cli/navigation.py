@@ -7,6 +7,7 @@ from typing import Callable
 
 from .audio import lab as audio_lab
 from .operations import run as ops_manual
+from .ncebg import run as ncngb_menu
 from .research import archive as research_archive
 from .rv import cli as rv_cli
 
@@ -22,4 +23,5 @@ ENTRIES: tuple[NavigationEntry, ...] = (
     NavigationEntry("Research Archive", research_archive.run),
     NavigationEntry("Audio Frequency Lab", audio_lab.run),
     NavigationEntry("Remote Viewing Training", rv_cli.run),
+    NavigationEntry("NCNGB Experimental Modules", ncngb_menu),
 )
