@@ -1,6 +1,7 @@
 # metatron_neuro_wheel_fluid.py
 # Metatron lines reworked for FLUID growth & glow, ray-seeded activation.
 # Based on prior build; same features (bands, nested sub-cycles, curved links, etc.)
+import argparse
 import math, random, time, sys
 import pygame
 
@@ -52,6 +53,34 @@ GLYPH_KINDS=6
 
 SEED=None
 if SEED is not None: random.seed(SEED)
+
+
+def _parse_cli_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Metatron Neuro Wheel visualiser")
+    parser.add_argument("--pulse-hz", type=float, default=None, help="Override the central pulse frequency.")
+    parser.add_argument("--speed-trim", type=float, default=None, help="Adjust animation speed multiplier.")
+    parser.add_argument(
+        "--scene-seconds",
+        type=float,
+        default=None,
+        help="Automatically exit after the specified number of seconds (<=0 disables).",
+    )
+    return parser.parse_args()
+
+
+def _apply_cli_overrides() -> None:
+    global CENTER_PULSE_HZ, SPEED_TRIM, SCENE_SECONDS
+    args = _parse_cli_args()
+    if args.pulse_hz is not None:
+        CENTER_PULSE_HZ = max(0.5, float(args.pulse_hz))
+    if args.speed_trim is not None:
+        SPEED_TRIM = max(0.2, float(args.speed_trim))
+    if args.scene_seconds is not None:
+        value = float(args.scene_seconds)
+        SCENE_SECONDS = value if value > 0 else 0
+
+
+_apply_cli_overrides()
 
 pygame.init()
 screen=pygame.display.set_mode((W,H), pygame.SCALED|pygame.RESIZABLE)
@@ -407,7 +436,7 @@ def run():
         screen.blit(hint,(16,screen.get_height()-36))
         pygame.display.flip()
 
-        if t>=SCENE_SECONDS: break
+        if SCENE_SECONDS and t>=SCENE_SECONDS: break
 
 while True:
     run()
