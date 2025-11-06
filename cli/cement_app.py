@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import inspect
 from dataclasses import dataclass
 from typing import Iterable, List, Optional
 
@@ -73,13 +74,34 @@ class MenuShell:
     # Command dispatch
     # ------------------------------------------------------------------
 
+    def _call_handler(self, option: MenuOption):
+        """Invoke the handler, injecting the console when supported."""
+
+        handler = option.entry.handler
+        try:
+            signature = inspect.signature(handler)
+        except (TypeError, ValueError):
+            signature = None
+
+        if signature is not None:
+            parameters = signature.parameters.values()
+            accepts_console = any(
+                parameter.kind is inspect.Parameter.VAR_KEYWORD
+                or parameter.name == "console"
+                for parameter in parameters
+            )
+            if accepts_console:
+                return handler(console=self._console)
+
+        return handler()
+
     def _run_entry(self, option: MenuOption, *, pause: bool = True) -> bool:
         self._console.print(
             f"\n[bold green]► Launching[/bold green] {option.label}...", highlight=False
         )
         self._console.rule(f"[bold cyan]{option.label}[/bold cyan]", style="cyan")
         try:
-            option.entry.handler()
+            self._call_handler(option)
         except Exception as exc:  # pragma: no cover - defensive guard for handlers
             LOGGER.error("Module '%s' raised an exception: %s", option.label, exc)
             self._console.print(
