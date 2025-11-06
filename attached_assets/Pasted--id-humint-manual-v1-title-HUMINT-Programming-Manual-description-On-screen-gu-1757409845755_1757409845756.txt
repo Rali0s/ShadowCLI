@@ -1,0 +1,124 @@
+{
+  "id": "humint-manual-v1",
+  "title": "HUMINT Programming Manual",
+  "description": "On-screen guided teleprompter for HUMINT schema training using Keywords, Anchors, Narration, and Frequency-based entrainment.",
+  "totalDuration": 105,
+  "version": "1.0",
+  "author": "Classification Level: TOP SECRET",
+  "created": "2025-09-08",
+  "tags": ["psychological", "tactical", "advanced", "schema", "entrainment"],
+  "prerequisites": ["basic-humint"],
+  "certification": "required",
+  "retention_test": true,
+  "priority": "high",
+  "classification": "TOP SECRET",
+  "difficulty": 8,
+  "repetitions": 3,
+  "cooldown": 120,
+  "environment": "neutral",
+  "equipment": ["teleprompter-app", "headphones", "entrainment-audio"],
+  "sections": [
+    {
+      "id": "section-1-traits",
+      "title": "Core Traits",
+      "keywords": ["Alertness", "Patience", "Credibility", "Objectivity", "Adaptability", "Perseverance", "Appearance", "Initiative"],
+      "mnemonic": "All People Can Operate And Persevere In Adversity",
+      "anchor": "Visualize agent equipping each trait like gear (glasses, coat, boots).",
+      "narration": "Stay alert. Be patient. Project credibility. Remain objective. Adapt quickly. Persevere under pressure. Maintain professional presence. Act with initiative.",
+      "frequency": "10 Hz Alpha",
+      "duration": 20,
+      "glyph": "◉",
+      "timing": [
+        { "time": 0, "text": "Alertness", "type": "keyword", "cue": "focus_visualization" },
+        { "time": 5, "text": "Patience", "type": "keyword" },
+        { "time": 10, "text": "Credibility", "type": "keyword" },
+        { "time": 15, "text": "Anchor: visualize agent putting on gear.", "type": "anchor" }
+      ]
+    },
+    {
+      "id": "section-2-phases",
+      "title": "Five Phases of HUMINT",
+      "keywords": ["Planning", "Approach", "Questioning", "Termination", "Reporting"],
+      "mnemonic": "Plan Ahead Quickly To Report",
+      "anchor": "Flashlight blink resets to Phase 1.",
+      "narration": "Plan with intent. Approach with rapport. Question systematically. Terminate cleanly. Report completely.",
+      "frequency": "14 Hz Low-Beta",
+      "duration": 15,
+      "glyph": "⬟",
+      "timing": [
+        { "time": 0, "text": "Planning", "type": "keyword" },
+        { "time": 3, "text": "Approach", "type": "keyword" },
+        { "time": 6, "text": "Questioning", "type": "keyword" },
+        { "time": 9, "text": "Termination", "type": "keyword" },
+        { "time": 12, "text": "Reporting", "type": "keyword" },
+        { "time": 14, "text": "Anchor: flashlight blink → reset Phase 1", "type": "anchor" }
+      ]
+    },
+    {
+      "id": "section-3-activities",
+      "title": "HUMINT Activities",
+      "keywords": ["Tactical Questioning", "Screening", "Interrogation", "Debriefing", "Liaison Ops", "SCO", "DOCEX/CEE"],
+      "mnemonic": "Grouped by Immediate, Cooperative, Long-term, Material",
+      "anchor": "Tap wrist to recall pyramid groups.",
+      "narration": "Immediate questioning for fast intel. Cooperative sources for depth. Long-term networks for reach. Material exploitation for evidence.",
+      "frequency": "10 Hz Alpha",
+      "duration": 15,
+      "glyph": "△",
+      "timing": [
+        { "time": 0, "text": "Immediate: Tactical, Screening", "type": "keyword" },
+        { "time": 5, "text": "Cooperative: Debrief, Liaison", "type": "keyword" },
+        { "time": 10, "text": "Anchor: Tap wrist → recall pyramid", "type": "anchor" }
+      ]
+    },
+    {
+      "id": "section-4-knowledge",
+      "title": "Knowledge Areas",
+      "keywords": ["Culture", "Threat", "Law", "Requirements", "Language", "Behavior"],
+      "mnemonic": "CTL-LRB",
+      "anchor": "Phrase 'Context First' recalls the knowledge web.",
+      "narration": "Culture drives behavior. Threat defines urgency. Law shapes limits. Requirements guide collection. Language controls access. Behavior reveals truth.",
+      "frequency": "6 Hz Theta",
+      "duration": 20,
+      "glyph": "⬢",
+      "timing": [
+        { "time": 0, "text": "Culture", "type": "keyword" },
+        { "time": 4, "text": "Threat", "type": "keyword" },
+        { "time": 8, "text": "Law", "type": "keyword" },
+        { "time": 12, "text": "Anchor: 'Context First' → Hexagon visualization", "type": "visualization" }
+      ]
+    },
+    {
+      "id": "section-5-capabilities",
+      "title": "Capabilities vs Limitations",
+      "keywords": ["Cross-cue", "Detail", "Deployability", "Unique Intel", "Language", "Culture", "Time", "Law"],
+      "mnemonic": "Balance strengths against limits",
+      "anchor": "Visualize ⚖ balance scale with strengths left, limits right.",
+      "narration": "HUMINT excels in detail and adaptability, but is slowed by language, culture, time, and law.",
+      "frequency": "12 Hz Beta → 6 Hz Theta",
+      "duration": 15,
+      "glyph": "⚖",
+      "timing": [
+        { "time": 0, "text": "Capabilities: Cross-cue, Detail, Deployability, Unique Intel", "type": "keyword" },
+        { "time": 7, "text": "Limitations: Language, Culture, Time, Law", "type": "keyword" },
+        { "time": 12, "text": "Anchor: visualize balance scale ⚖", "type": "visualization" }
+      ]
+    },
+    {
+      "id": "section-6-compression",
+      "title": "Compression Drill (Chalice/Delta)",
+      "keywords": ["Process", "Execution", "CONTROL"],
+      "mnemonic": "Fuse Process + Execution into CONTROL",
+      "anchor": "Say CONTROL as Delta anchor. Expand upward.",
+      "narration": "Traits and Phases form Process. Activities, Knowledge, and Capabilities form Execution. Both collapse into CONTROL.",
+      "frequency": "3 Hz Delta → 6 Hz Theta",
+      "duration": 20,
+      "glyph": "◈",
+      "timing": [
+        { "time": 0, "text": "Process = Traits + Phases", "type": "compression" },
+        { "time": 8, "text": "Execution = Activities + Knowledge + Capabilities", "type": "compression" },
+        { "time": 15, "text": "CONTROL", "type": "keyword", "cue": "spoken_word" },
+        { "time": 18, "text": "Anchor: CONTROL expands upward → recall full schema", "type": "anchor" }
+      ]
+    }
+  ]
+}

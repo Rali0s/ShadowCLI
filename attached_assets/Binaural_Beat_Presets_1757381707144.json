@@ -1,0 +1,66 @@
+[
+  {
+    "Goal":"Calm Focus \/ Flow",
+    "Target_Freq_Hz":"12\u201315",
+    "Left_Ear_Hz":220,
+    "Right_Ear_Hz":232,
+    "Duration_Min":30,
+    "Ramp":"5-min 10\u219212 Hz, hold"
+  },
+  {
+    "Goal":"Deep Focus \/ Study",
+    "Target_Freq_Hz":"14\u201318",
+    "Left_Ear_Hz":220,
+    "Right_Ear_Hz":236,
+    "Duration_Min":40,
+    "Ramp":"3-min ramp to 14 Hz, hold"
+  },
+  {
+    "Goal":"Memory Encoding Boost",
+    "Target_Freq_Hz":"6 \u2194 10",
+    "Left_Ear_Hz":"200\/220",
+    "Right_Ear_Hz":"210\/226",
+    "Duration_Min":20,
+    "Ramp":"Cycle 10 min 10 Hz, 10 min 6 Hz"
+  },
+  {
+    "Goal":"Pre-sleep downshift",
+    "Target_Freq_Hz":"10 \u2192 6",
+    "Left_Ear_Hz":"210\/200",
+    "Right_Ear_Hz":"220\/206",
+    "Duration_Min":30,
+    "Ramp":"10 min 10 Hz \u2192 20 min 6 Hz"
+  },
+  {
+    "Goal":"Deep Sleep induction",
+    "Target_Freq_Hz":"1\u20133",
+    "Left_Ear_Hz":200,
+    "Right_Ear_Hz":202,
+    "Duration_Min":40,
+    "Ramp":"5 min 6\u21923 Hz, hold"
+  },
+  {
+    "Goal":"Lucid Dream (adjunct)",
+    "Target_Freq_Hz":"6 (theta sim)",
+    "Left_Ear_Hz":200,
+    "Right_Ear_Hz":206,
+    "Duration_Min":20,
+    "Ramp":"Hold during REM nap session"
+  },
+  {
+    "Goal":"Mood lift \/ Positivity",
+    "Target_Freq_Hz":"6 or 10",
+    "Left_Ear_Hz":"200\/220",
+    "Right_Ear_Hz":"210\/226",
+    "Duration_Min":30,
+    "Ramp":"Gentle fade in\/out"
+  },
+  {
+    "Goal":"Anxiety de-arousal",
+    "Target_Freq_Hz":"8\u201310 \/ 12\u201315",
+    "Left_Ear_Hz":"210\/220",
+    "Right_Ear_Hz":"220\/232",
+    "Duration_Min":20,
+    "Ramp":"15\u201325 min hold"
+  }
+]

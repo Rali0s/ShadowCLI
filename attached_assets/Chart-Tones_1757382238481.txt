@@ -1,0 +1,75 @@
+Got it, Mike — let’s tighten this up with specific, evidence-anchored frequency targets (and flag where claims are weak). I also reviewed the PDF you shared and tuned the entries below accordingly.
+Quick facts (what’s solid vs. shaky)
+	•	EEG bands (solid): Delta 0.5–4 Hz, Theta 4–7/8 Hz, Alpha 8–12 Hz, Beta 13–30 Hz (std. clinical ranges). (NCBI, PMC)
+	•	“Opioid frequencies” (misframed): There’s no audio tone at 300–400 Hz that “targets” opioid receptors. Where opioids show up in frequency research is electrical stimulation, not audio: ~2–4 Hz (μ-opioid) vs ~100 Hz (δ-opioid) TENS mechanisms for analgesia. (PMC, jpain.org)
+	•	Lucid dream stimulation (real but electrical): tACS at 25 Hz and 40 Hz during REM has induced aspects of lucidity in lab studies (electrical currents, not sounds). (PMC, Nature)
+	•	Binaural/isochronic beats (mixed evidence): Small/moderate effects reported across cognition/anxiety/sleep, but results are inconsistent and protocol-sensitive. Use as a support, not a “drug-like” control. (PMC, The Open Public Health Journal)
+
+Upgraded, specific tone presets (tones = binaural/isochronic; wear headphones for binaurals)
+Goal
+Frequency target(s)
+Session pattern (example)
+Evidence notes
+Calm Focus / “Flow” work
+SMR 12–15 Hz (isochronic) or binaural 12–14 Hz
+5-min ramp from 10 → 12 Hz, then 20–40 min at 12–15 Hz
+SMR neurofeedback improves attention/steadiness; this band straddles alpha/beta for relaxed vigilance. (NCBI)
+Deep Focus / Study
+Low-beta 14–18 Hz
+3-min ramp to 14 Hz; 30–50 min hold; keep volume low
+Beta supports sustained attention; avoid high-beta (>~25 Hz) to reduce anxiety/over-arousal. (NCBI)
+Memory Encoding Boost
+Theta–alpha cross: 6 Hz ↔ 10 Hz (interleaved)
+5 min @10 Hz → 10 min @6 Hz → repeat 2–3×
+Hippocampal theta rises with successful encoding; light alpha helps calm/absorb. Don’t use 6 Hz while doing heavy math; slot between study blocks. (The Journal of Neuroscience, PMC)
+Pre-sleep downshift
+Alpha 8–10 Hz → Theta 5–6 Hz
+10 min @10 Hz then 15–20 min @5–6 Hz
+Mirrors natural descent eyes-closed alpha → theta. Helpful as wind-down. (NCBI)
+Deep Sleep induction
+Delta 1–3 Hz (isochronic preferred)
+5 min ramp 6 → 3 Hz, then 30–45 min @2–3 Hz
+Targets slow-wave rhythm; strongest entrainment via isochronic/pulsed noise. (Headphones optional for isochronic.) (NCBI)
+Lucid Dream (adjunct)
+(Electrical tACS research) 25 Hz / 40 Hz during REM
+Audio won’t replicate tACS. If using audio, try theta-rich sound bed and MILD/CWT techniques instead
+Lab tACS at 25/40 Hz increased lucidity metrics; this is not an audio effect. (PMC, Nature)
+Mood lift / Positivity
+10 Hz alpha or 6 Hz theta (gentle)
+20–30 min, eyes closed, breathwork synced
+Alpha/theta linked to relaxation/affect regulation; outcomes vary by person and protocol. (Frontiers)
+Anxiety de-arousal
+Alpha 8–10 Hz (steady), or SMR 12–15 Hz
+15–25 min, minimal distractions
+Calms high-beta arousal; SMR is widely used in anxiety-leaning protocols. (NCBI)
+Why these are tighter: They map to named EEG sub-bands used clinically/research (e.g., SMR 12–15 Hz, low-beta 14–18 Hz, delta 1–3 Hz) instead of vague “alpha/beta.”
+
+“Opioid / Dopamine” mapping — what’s valid to claim
+	•	No audio frequency is known to directly “tune” μ (MOR) or δ (DOR) receptors.
+	•	Electrical stimulation distinction (TENS): ~2–4 Hz → μ-opioid–mediated analgesia; ~80–100 Hz → δ-opioid–mediated analgesia. Good mechanistic evidence in animals & humans. Not audio. (PMC, jpain.org)
+	•	Music & opioids: Pleasurable music can activate the brain’s opioid system, but that’s about reward processing, not a specific tone. (PMC)
+
+Flow-state recipes (chaining bands with timing)
+	1	Study → Encode → Sleep-consolidate (weekday)
+	•	40 min 14–18 Hz (study) → 10 min 10 Hz (reset) → 10 min 6 Hz (pre-sleep) → 30–45 min 2–3 Hz (delta track after lights-out). Rationale: attention (beta) → calm (alpha) → transition (theta) → SWS consolidation (delta). (NCBI, The Journal of Neuroscience)
+	2	Creative ideation (afternoon)
+	•	5 min 10 Hz warmup → 20 min 6 Hz → 10 min silent note-taking. Rationale: alpha settles; theta promotes associative insight; brief silence captures ideas. (Frontiers)
+	3	Anxiety-safe deep work (sensitive to jitter)
+	•	30 min 12–15 Hz (SMR) only. Rationale: steadies arousal without pushing into edgy beta. (NCBI)
+
+What I corrected vs. the earlier draft
+	•	Converted generic “alpha/beta/theta” mentions into precise sub-band targets and durations.
+	•	Removed any implication that 300–400 Hz audio relates to opioid receptors; replaced with TENS (2–4 vs. ~100 Hz) mechanisms. (PMC, jpain.org)
+	•	Clarified that lucid-dream “frequencies” derive from electrical 25/40 Hz tACS, not tones. (PMC, Nature)
+	•	Anchored memory claims in human hippocampal theta literature (2023–2025). (The Journal of Neuroscience, PMC)
+
+Minimal how-to on your tone site (onlinetonegenerator.com)
+	•	Binaural beats: set L and R ear to differ by the target beat (e.g., L 220 Hz / R 230 Hz → 10 Hz alpha). Keep carriers ~150–400 Hz and comfortable volume; headphones required.
+	•	Isochronic pulses (if available elsewhere): pick the exact pulse rate (e.g., 12 Hz SMR). These tend to entrain more strongly than binaurals for many users.
+	•	Keep sessions 20–40 min, low volume, eyes closed for relaxation targets.
+
+Final cautions
+	•	Individual responses vary; start conservative and log how you feel.
+	•	Use audio as an adjunct (sleep hygiene, breaks, light, caffeine timing still matter).
+	•	Any clinical conditions → talk to your clinician before heavy use.
+If you want, I’ll turn these into downloadable session presets (CSV/JSON: band, target Hz, ramp, hold, repeat) you can load into your workflow.

@@ -1,0 +1,153 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\froman\fcharset0 Times-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Got it \'97 if you\'92re coding your own 
+\f1\b on-screen teleprompter
+\f0\b0 , here\'92s a ready-to-feed 
+\f1\b narration flow script
+\f0\b0 . It streams 
+\f1\b keywords, additive narration, and anchors
+\f0\b0  in a cadence you can scroll or trigger during your session.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f1\b\fs48 \cf0 \strokec2 HUMINT Teleprompter Script\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs24 \cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Section 1 \'96 Core Traits\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf0 \strokec2 Keywords:
+\f0\b0  Alertness \'96 Patience \'96 Credibility \'96 Objectivity \'96 Adaptability \'96 Perseverance \'96 Appearance \'96 Initiative\uc0\u8232 
+\f1\b Narration Flow:
+\f0\b0 \uc0\u8232 
+\f2\i \strokec2 Stay alert to every cue. Be patient but in control. Project credibility. Remain objective. Adapt quickly. Persevere under pressure. Maintain professional appearance. Act with initiative.
+\f0\i0 \strokec2 \uc0\u8232 
+\f1\b Anchor:
+\f0\b0  Visualize agent gearing up \'97 each trait becomes a piece of equipment.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Section 2 \'96 Five Phases of HUMINT\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf0 \strokec2 Keywords:
+\f0\b0  Planning \'96 Approach \'96 Questioning \'96 Termination \'96 Reporting\uc0\u8232 
+\f1\b Narration Flow:
+\f0\b0 \uc0\u8232 
+\f2\i \strokec2 Plan before action. Approach with rapport. Question with intent. Terminate cleanly. Report completely.
+\f0\i0 \strokec2 \uc0\u8232 
+\f1\b Anchor:
+\f0\b0  Flashlight blink = restart at Phase 1.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Section 3 \'96 HUMINT Activities\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf0 \strokec2 Keywords (Grouped):
+\f0\b0  Immediate (Tactical, Screening) \'96 Cooperative (Debrief, Liaison) \'96 Long-Term (SCO) \'96 Material (DOCEX, CEE)\uc0\u8232 
+\f1\b Narration Flow:
+\f0\b0 \uc0\u8232 
+\f2\i \strokec2 Immediate questioning brings fast answers. Cooperative sources offer depth. Long-term contacts build networks. Material exploitation reveals hidden truth.
+\f0\i0 \strokec2 \uc0\u8232 
+\f1\b Anchor:
+\f0\b0  Wrist tap \uc0\u8594  recall pyramid: base (Immediate), middle (Cooperative), top (Long-Term), capstone (Material).\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Section 4 \'96 Knowledge Areas\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf0 \strokec2 Keywords:
+\f0\b0  Culture \'96 Threat \'96 Law \'96 Requirements \'96 Language \'96 Behavior (
+\f2\i \strokec2 CTL-LRB
+\f0\i0 \strokec2 )\uc0\u8232 
+\f1\b Narration Flow:
+\f0\b0 \uc0\u8232 
+\f2\i \strokec2 Culture drives behavior. Threat defines urgency. Law shapes limits. Requirements focus collection. Language enables control. Behavior exposes the truth.
+\f0\i0 \strokec2 \uc0\u8232 
+\f1\b Anchor:
+\f0\b0  Whisper phrase \'93Context First.\'94 Visualize six-point web.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Section 5 \'96 Capabilities vs. Limitations\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf0 \strokec2 Keywords:
+\f0\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Capabilities:
+\f0\b0  Cross-cue \'96 Detail \'96 Deployability \'96 Unique Intel\
+\ls1\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Limitations:
+\f0\b0  Language \'96 Culture \'96 Time \'96 Law\uc0\u8232 
+\f1\b Narration Flow:
+\f0\b0 \uc0\u8232 
+\f2\i HUMINT excels in detail and adaptability. Yet language, culture, time, and law bind its limits.
+\f0\i0 \uc0\u8232 
+\f1\b Anchor:
+\f0\b0  Visualize a balance scale \'97 strengths on the left, constraints on the right.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs28 \cf0 \strokec2 Section 6 \'96 Compression Drill (Chalice/Delta)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf0 \strokec2 Keywords:
+\f0\b0  Process (Traits + Phases) \'96 Execution (Activities + Knowledge + Capabilities) \uc0\u8594  CONTROL\u8232 
+\f1\b Narration Flow:
+\f0\b0 \uc0\u8232 
+\f2\i \strokec2 Traits and Phases form Process. Activities and Knowledge form Execution. Together, they compress into one anchor: CONTROL.
+\f0\i0 \strokec2 \uc0\u8232 
+\f1\b Anchor:
+\f0\b0  Say CONTROL. Visualize it pulsing in your mind. Let CONTROL expand upward into full schema.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f1\b\fs48 \cf0 \strokec2 Usage Notes for Teleprompter\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls2\ilvl0
+\f0\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Display 
+\f1\b keywords in bold
+\f0\b0  for recall triggers.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Stream 
+\f1\b narration flow
+\f0\b0  in short phrases, one per breath.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Flash anchor cues in italics or symbols (\uc0\u55357 \u56481  flashlight blink, \u9995  wrist tap).\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Maintain scrolling rhythm ~5\'967 seconds per line.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec3 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 Mike \'97 do you want me to also 
+\f1\b add timing markers
+\f0\b0  (e.g., [00:05], [00:10]) so you can sync teleprompter flow with entrainment audio tracks in your session?\
+}

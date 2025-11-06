@@ -1,0 +1,286 @@
+Let's get that full document converted for you. Here is the complete text from the "Report of Inspection of MKULTRA," formatted in Markdown.
+
+---
+
+**MEMORANDUM FOR: Director of Central Intelligence**
+**SUBJECT: Report of Inspection of MKULTRA**
+**26 July 1963**
+
+1.  [cite_start]In connection with our survey of Technical Services Division, DD/P, it was deemed advisable to prepare the report of the MKULTRA program in one copy only, in view of its unusual sensitivity. [cite: 535]
+
+2.  [cite_start]This report is forwarded herewith. [cite: 536]
+
+3.  [cite_start]The MKULTRA activity is concerned with the research and development of chemical, biological, and radiological materials capable of employment in clandestine operations to control human behavior. [cite: 537-539] [cite_start]The end products of such research are subject to very strict controls including a requirement for the personal approval of the Deputy Director/Plans for any operational use made of these end products. [cite: 539]
+
+4.  [cite_start]The cryptonym MKULTRA encompasses the R&D phase and a second cryptonym MKDELTA denotes the DD/P system for control of the operational employment of such materials. [cite: 540] [cite_start]...The administration and control of this latter activity were found to be generally satisfactory and are discussed in greater detail in the main body of the report on TSD. [cite: 541-542]
+
+5.  [cite_start]MKULTRA was authorized by the then Director of Central Intelligence, Mr. Allen W. Dulles, in 1953. [cite: 543] [cite_start]The TSD was assigned responsibility thereby to employ a portion of its R&D budget... under purely internal and compartmented controls... [cite: 543] [cite_start]Normal procedures for project approval, funding, and accounting were waived. [cite: 544] [cite_start]However, special arrangements for audit of expenditures have been evolved in subsequent years. [cite: 545]
+
+6.  [cite_start]The scope of MKULTRA is comprehensive and ranges from the search for and procurement of botanical and chemical substances, through programs for their analysis in scientific laboratories, to progressive testing for effect on animals and human beings. [cite: 557] [cite_start]The testing on individuals begins under laboratory conditions employing every safeguard and progresses gradually to more and more realistic operational simulations. [cite: 558] [cite_start]The program requires and obtains the services of a number of highly specialized authorities in many fields of the natural sciences. [cite: 559]
+
+7.  [cite_start]The concepts involved in manipulating human behavior are found by many people both within and outside the Agency to be distasteful and unethical. [cite: 560] [cite_start]There is considerable evidence that opposition intelligence services are active and highly proficient in this field. [cite: 561] [cite_start]The experience of TSD to date indicates that both the research and the employment of the materials are expensive and often unpredictable in results. [cite: 562] [cite_start]Nevertheless, there have been major accomplishments both in research and operational employment. [cite: 563]
+
+8.  [cite_start]The principal conclusions of the inspection are that the structure and operational controls over this activity need strengthening; [cite: 564] [cite_start]improvements are needed in the administration of the research projects; [cite: 565] [cite_start]and some of the testing of substances under simulated operational conditions was judged to involve excessive risk to the Agency. [cite: 566]
+
+9.  [cite_start]Attached for the signature of the Deputy Director of Central Intelligence is a memorandum transmitting the report to the Deputy Director/Plans requesting a summary of action taken or comments on the recommendations contained therein. [cite: 567]
+
+**J. Earman**
+[cite_start]**Inspector General** [cite: 570]
+
+---
+
+### REPORT OF INSPECTION OF MKULTRA/TSD
+
+#### I. Introduction
+
+1.  [cite_start]Technical Services Division (TSD), (then Technical Support Staff), received authorization from the then Director of Central Intelligence, Mr. Allen W. Dulles, on 3 April 1953 to develop and maintain continuing operational capabilities in the fields of a) [REDACTED] and b) chemical and biological materials capable of producing human behavioral and physiological changes, (see Tab A). [cite: 578, 584] [cite_start]The cryptonym MKULTRA was assigned to encompass TSD's research, development and equipment activities in these two fields. [cite: 585] [cite_start]The cryptonym MKDELTA had already been assigned... as the indicator covering DD/P policy and procedure for the use of biochemicals in clandestine operations. [cite: 586]
+
+2.  [cite_start]The MKULTRA charter provides only a brief presentation of the rationale of the authorized activities. [cite: 587] [cite_start]The sensitive aspects of the program as it has evolved over the ensuing ten years are the following: [cite: 588]
+    * a. [cite_start]Research in the manipulation of human behavior is considered by many authorities in medicine and related fields to be professionally unethical, therefore the reputations of professional participants in the MKULTRA program are on occasion in jeopardy. [cite: 589-601]
+    * b. [cite_start]Some MKULTRA activities raise questions of legality implicit in the original charter. [cite: 602-603]
+    * c. [cite_start]A final phase of the testing of MKULTRA products places the rights and interests of U. S. citizens in jeopardy. [cite: 604]
+    * d. [cite_start]Public disclosure of some aspects of MKULTRA activity could induce serious adverse reaction in U. S. public opinion, as well as stimulate offensive and defensive action in this field on the part of foreign intelligence services. [cite: 605]
+
+3.  [cite_start]In recognition of the sensitivity of MKULTRA, TSD was authorized exclusive control of the administration, records, and financial accountings of the program. [cite: 606] [cite_start]Simple statements of certification were all that were required of TSD to obtain advances of funds from Finance Division. [cite: 607] [cite_start]The DCI's memorandum also exempted MKULTRA from audit, but this provision was modified to permit limited audit before the end of the first year. [cite: 608] [cite_start]Funding of MKULTRA was eventually stabilized at 20 percent of TSD's annual research and development budget. [cite: 609] [cite_start]It has fallen in the neighborhood of [REDACTED] per year over the ten-year history of the program... [cite: 610-611]
+
+4.  [cite_start]The inspection of TSD activities in the field of [REDACTED] while chartered under MKULTRA is discussed... in the section of the Inspector General's Survey dealing with the [REDACTED] of TSD... [cite: 619] [cite_start]The security considerations applying to [REDACTED] were found to be significantly different from those governing manipulation of human behavior. [cite: 619]
+
+5.  [cite_start]The inspection of MKULTRA projects in biochemical controls of human behavior raised questions in the following area of policy and management which are dealt with in the balance of this report: [cite: 621]
+    * a. [cite_start]**Scope of the MKULTRA charter:** [cite: 625]
+        * (1) [cite_start]Over the ten-year life of the program many additional avenues to the control of human behavior have been designated by the TSD management as appropriate to investigation under the MKULTRA charter, including radiation, electro-shock, various fields of psychology, psychiatry, sociology, and anthropology, graphology, harrassment substances, and paramilitary devices and materials. [cite: 626-627]
+        * (2) [cite_start]Various projects do not appear to have been sufficiently sensitive to warrant waiver of normal Agency procedures for authorization and control. [cite: 628]
+        * (3) [cite_start]Other secure channels for establishment and funding of Agency-sterile activities have been evolved over the past ten years by Deputy Director/Support (DD/S) and in some cases could reasonably be employed by TSD in lieu of MKULTRA procedures. [cite: 629-630]
+    * b. [cite_start]**MKULTRA management policies:** [cite: 632]
+        * (1) [cite_start]...TSD has pursued a philosophy of minimum documentation in keeping with the high sensitivity of some of the projects. [cite: 639] [cite_start]...The lack of consistent records precluded use of routine inspection procedures and raised a variety of questions concerning management and fiscal controls. [cite: 643-645]
+        * (2) [cite_start]Lack of records essential to inspection of MKULTRA moved to the forefront among issues as the present survey proceeded. [cite: 646] [cite_start]...The records on representative items would have been reviewed according to such standard criteria as: [cite: 649-650]
+            * (a) [cite_start]How were the substance and its properties identified? [cite: 651-652]
+            * (b) [cite_start]What researcher was selected to perform the research, and why? [cite: 654-655]
+            * (c) [cite_start]When was the work begun, where,: involving what costs, at what rate of progress, based on what tests? [cite: 656]
+            * (d) [cite_start]What are the present capabilities and limitations of the substance for clandesinte operations? [cite: 661]
+            * (e) [cite_start]What further research is being conducted on this and related substances and how does this reflect existing TSD capabilities, operational requirements and budget factors? [cite: 662]
+        * (3) [cite_start]MKULTRA records afforded no such approach to inspection. [cite: 663] [cite_start]There are just two individuals in TSD who have full substantive knowledge of the program and most of that knowledge is unrecorded. [cite: 663]
+    * c. [cite_start]**Advanced testing of MKULTRA materials:** [cite: 668]
+        * [cite_start]It is the firm doctrine in TSD that testing of materials under accepted scientific procedures fails to disclose the full pattern of reactions and attributions that may occur in operational situations. [cite: 669, 674] [cite_start]TSD initiated a program for covert testing of materials on unwitting U. S. citizens in 1955. [cite: 674] [cite_start]The present report reviews the rationale and risks attending this activity and recommends termination of such testing in the United States... [cite: 674-675]
+
+#### II. Modus Operandi
+
+6.  [cite_start]The research and development of materials capable of producing behavioral or physiological change in humans is now performed within a highly elaborated and stabilized MKULTRA structure. [cite: 677] [cite_start]The search for new materials; e.g., psilocybin from Mexican mushrooms, or a fungi occurring in agricultural crops, is conducted through standing arrangements with specialists in universities, pharmaceutical houses, hospitals, state and federal institutions, and private research organizations... [cite: 678] [cite_start]Annual grants of funds are made under ostensible research foundation auspices to the specialists... [cite: 679] [cite_start]This approach conceals from the institution the interest of CIA and permits the recipient to proceed with his investigation, publish his findings (excluding intelligence implications), and account for his expenditures in a manner normal to his institution. [cite: 680] [cite_start]...Key individuals must qualify for top secret clearance and are made witting of Agency sponsorship. [cite: 690] [cite_start]As a rule each specialist is managed unilaterally and is not witting of Agency support of parallel MKULTRA research in his field. [cite: 691] [cite_start]The system in effect "buys a piece" of the specialist in order to enlist his aid in pursuing the intelligence implications of his research. [cite: 692]
+
+7.  [cite_start]The funding of sensitive MKULTRA projects by sterile grants in aid... disclosed one of the principal controversial aspects of this program. [cite: 695] [cite_start]The original charter... assumed that the sensitivity... would be sufficient to justify both a) special protection for the researcher; and b) compartmentation of MKULTRA knowledge within the Agency. [cite: 696-698] [cite_start]On this basis the inherent safeguards of DD/S procedures were waived... [cite: 698]
+
+8.  [cite_start]The next phase of the MKULTRA program involves physicians, toxicologists, and other specialists in mental, narcotics, and general hospitals and in prisons, who are provided the products and findings of the basic research projects and proceed with intensive testing on human subjects. [cite: 709] [cite_start]...Materials and procedures with intelligence potential may be identified through this relationship. [cite: 711] [cite_start]The testing programs are conducted under accepted scientific procedures including the use of control populations, the employment of placebos, and the detailed observation, measurement, recording, analysis, and publication of findings. [cite: 717] [cite_start]Where health permits, test subjects are voluntary participants in the program. [cite: 718]
+
+9.  [cite_start]A current development in the testing of new products is the tightening of controls over dosages and procedures by the U. S. Food and Drug Administration. [cite: 719] [cite_start]...interviews with the TSD officers concerned indicated that the new rules are affecting procedures and causing controversy in research hospitals and pharmaceutical houses. [cite: 721]
+
+10. [cite_start]The final phase of testing of MKULTRA materials involves their application to unwitting subjects in normal life settings. [cite: 723] [cite_start]...the capabilities of MKULTRA substances to produce disabling or discrediting effects or to increase the effectiveness of interrogation of hostile subjects cannot be established solely through testing on volunteer populations. [cite: 724] [cite_start]Reaction and attribution patterns are clearly affected when the testing is conducted in an atmosphere of confidence under skilled medical supervision. [cite: 725, 730]
+
+11. [cite_start]TSD, therefore, entered into an informal arrangement with certain cleared and witting individuals in the Bureau of Narcotics in 1955 which provided for the release of MKULTRA materials for such testing as those individuals deemed desirable and feasible. [cite: 731] [cite_start]...The Director of the Bureau has been briefed on the activity, but the Deputy Chief, TSD... is of the opinion that the former would disclaim all knowledge and responsibility in the event of compromise. [cite: 733] [cite_start]...The sum of $10,000.00 has been provided annually to each of the two projects to cover cost of cultivation of targets and of maintenance of a safehouse in each area for the observation of effects of substances on selected test individuals. [cite: 735]
+
+12. [cite_start]The particular advantage of these arrangements with the Bureau of Narcotics officials has been that test subjects could be sought and cultivated within the setting of narcotics control. [cite: 736] [cite_start]Some subjects have been informers or members of suspect criminal elements from whom the Bureau has obtained results of operational value through the tests. [cite: 743] [cite_start]On the other hand, the effectiveness of the substances on individuals at all social levels... is of great significance and testing has been performed on a variety of individuals within these categories. [cite: 744]
+
+13. [cite_start]A significant limitation on the effectiveness of such testing is the infeasibility of performing scientific observation of results. [cite: 745] [cite_start]The Bureau agents are not qualified scientific observers. [cite: 746] [cite_start]...In a number of instances... the test subject has become ill for hours or days, including hospitalization in at least one case, and the agent could only follow-up by guarded inquiry after the test subject's return to normal life. [cite: 748] [cite_start]Possible sickness and attendant economic loss are inherent contingent effects of the testing. [cite: 749]
+
+14. [cite_start]The MKULTRA program officer stated that the objectives of covert testing concern the field of toxicology rather than medicine; [cite: 750] [cite_start]further, that the program is not intended to harm test individuals... [cite: 751] [cite_start]The risk of compromise of the program through correct diagnosis of an illness by an unwitting medical specialist is regularly considered... [cite: 752, 756]
+
+15. [cite_start]There have been several discussions in the public press in recent months on the use of certain MKULTRA-type drugs to influence human behavior. [cite: 758] [cite_start]...professional researchers in medicine and psychiatry are split on the ethics of performing such research. [cite: 759] [cite_start]Increasing public attention to this subject is to be expected. [cite: 760]
+
+16. [cite_start]The final step in the research and development sequence is the delivery of MKULTRA materials into the MKDELTA control system governing their employment in clandestine operations. [cite: 761] [cite_start]...it is appropriate here to note that the employment of MKDELTA materials remains an art rather than a scientific procedure. [cite: 762] [cite_start]A significant number of variables in the target individual... may account for widely varying and unpredictable reactions to a given drug in a given dosage. [cite: 763]
+
+17. [cite_start]The final stage of covert testing of materials on unwitting subjects is clearly the most sensitive aspect of MKULTRA. [cite: 768] [cite_start]No effective cover story appears to be available. [cite: 769] [cite_start]...Present practice is to maintain no records of the planning and approval of test programs. [cite: 771] [cite_start]The principal responsibility for the propriety of such testing rests with the MKULTRA program director and the Deputy Chief of TSD. [cite: 772]
+
+18. [cite_start]...Of more critical significance, however, is the risk of serious damage to the Agency in the event of compromise of the true nature of this activity. [cite: 777-778] [cite_start]As now performed under Bureau of Narcotics auspices, non-Agency personnel are necessarily fully witting of the true nature and signficance of their assignments, and of the sponsorship of CIA. [cite: 779] [cite_start]...Weighing possible benefits of such testing against the risks of compromise and of resulting damage to CIA has led the Inspector General to recommend termination of this phase of the MKULTRA program. [cite: 790]
+
+19. [cite_start]It does not follow that termination of covert testing of MKULTRA materials on unwitting U. S. citizens will bring the program to a halt. [cite: 792] [cite_start]Some testing on foreign nationals has been occurring under the present arrangements. [cite: 793] [cite_start]Various U. S. deep cover agents overseas would appear to be more favorably situated than the U. S. narcotics agents to perform realistic testing. [cite: 794] [cite_start]Finally, the operational use of the substances clearly serves the testing function... [cite: 795]
+
+#### III. Current estimate of the MKULTRA/MKDELTA capability
+
+20. [cite_start]The present Deputy Chief of TSD, Dr. Sidney Gottlieb... released a study... on 21 April 1960, covering his six-month investigation of "Scientific and Technical Problems in Covert Action Operations". [cite: 800] [cite_start]...The inspectors found this Appendix to be a carefully prepared and very useful treatment of the subject. [cite: 802]
+
+21. [cite_start]The author opened his discussion with the question of what the operational returns had been from an eight-year program involving an investment of approximately [REDACTED]. [cite: 804-805] [cite_start]He observed that the Clandestine Services had encouraged TSD... to develop and maintain the operational capability... but that TSD had received little or no guidance... and that the Clandestine Services had up to that time shown little inclination to use the end products operationally. [cite: 806] [cite_start]...there had been approximately 100 operations over the eight years employing harrassment materials... and only nine operations employing disabling drugs... No use of lethal substances was reported. [cite: 807, 814-816]
+
+22. [cite_start]The factors accounting for the low rate of use of this capability were considered to be the following: [cite: 817-818]
+    * [cite_start]a. the technical shortcomings of the drugs [cite: 819]
+    * [cite_start]b. the problem of testing in realistic pilot operations [cite: 820]
+    * [cite_start]c. limitations on the dissemination of pertinent information to operations officers [cite: 821]
+    * [cite_start]d. organizational and administrative restrictions on operations [cite: 823]
+    * [cite_start]e. negative attitudes toward the use of MKDELTA materials [cite: 825]
+    * [cite_start]f. problems in the training of case officers in this field [cite: 826]
+    * [cite_start]g. the risk of stimulating increased use of MKDELTA materials by opposition intelligence services [cite: 827-828]
+
+23. [cite_start]**Technical shortcomings of the drugs:** [cite: 829]
+    [cite_start]As of 1960 no effective knockout pill, truth serum, aphrodisiac, or recruitment pill was known to exist. [cite: 830] [cite_start]MKDELTA was described as inherently a high-risk, low-yield field of operations. [cite: 831] [cite_start]Three years later the situation remains substantially unchanged, with the exception that real progress has been made in the use of drugs in support of interrogation. [cite: 832] [cite_start]Ironically, however, the progress here has occurred in the development of a total psychological theory of interrogation, in which the use of drugs has been relegated to a support role. [cite: 833]
+
+24. [cite_start]**The problem of testing in realistic pilot operations:** [cite: 843]
+    [cite_start]This subject has been discussed above... [cite: 844]
+
+25. [cite_start]**Limitations on the dissemination of pertinent information...** [cite: 847]
+    [cite_start]The present-day situation concering both of these problem areas is improved over 1960. [cite: 848] [cite_start]TSD now regularly briefs a variety of senior officers on its MKDELTA capability. [cite: 848]
+
+26. [cite_start]TSD has found that TDY visits of MKULTRA officers to the field in support of specific operations increases the awareness of the MKDELTA capability and stimulates proposals for additional projects. [cite: 856, 858]
+
+27. [cite_start]**Negative attitudes toward the use of MKDELTA materials...** [cite: 874]
+    [cite_start]The 1960 Gottlieb report observed that some case officers have basic moral objections to the concept of MKDELTA and therefore refuse to use the materials. [cite: 875-877] [cite_start]Some senior officers were reported to believe that the proper employment of the capability required more sophistication than most case officers possessed... [cite: 880-881]
+
+28. [cite_start]**The risk of stimulating increased use of MKDELTA materials by opposition intelligence services:** [cite: 887-888]
+    [cite_start]The Gottlieb report stated that opposition intelligence services are active in the MKDELTA field and recommended that the CI Staff of the DD/P conduct a systematic study of the evidence. [cite: 889, 891] [cite_start]This recommendation has not been implemented. [cite: 892]
+
+    [cite_start]**It is recommended that:** [cite: 897]
+    [cite_start]Deputy Director/Plans instruct Chief, CI Staff, to perform a study of the evidence of use of MKDELTA materials by opposition intelligence services and recommend appropriate measures for training DD/P case officers to recognize and counter hostile activity in this area. [cite: 898-899]
+
+29. [cite_start]In summary, present evidence concerning the operational value of the MKDELTA capability would appear to confirm the principal judgments of the 1960 Gottlieb report. [cite: 900] [cite_start]There is an extremely low rate of operational use of the controlled materials. [cite: 901]
+
+#### IV. Management of MKULTRA
+
+30. [cite_start]TSD has initiated 144 projects relating to the control of human behavior... during the ten years of operation of the MKULTRA program. [cite: 906-907] [cite_start]Twenty-five (25) of these projects remain in existence at the present time... [cite: 907]
+
+31. [cite_start]Active projects may be grouped under the following arbitrary headings... [cite: 908, 914]
+    * [cite_start]a. basic research in materials and processes [cite: 919]
+    * [cite_start]b. procurement of research materials [cite: 920]
+    * [cite_start]c. testing of substances on animals and human beings [cite: 921]
+    * [cite_start]d. development of delivery techniques [cite: 922]
+    * [cite_start]e. projects in offensive/defensive BW, CW, and radiation [cite: 923]
+    * [cite_start]f. miscellaneous projects (1) petroleum sabotage, (2) defoliants, (3) devices for remote measurement of physiological processes [cite: 924]
+
+32. [cite_start]The current management of TSD has initiated a policy of directing the activities of MKULTRA... towards operations and away from long-range research. [cite: 925] [cite_start]...MKULTRA sponsored a large number of projects in the fields of applied psychology, sociology, anthropology, and graphology. [cite: 926] [cite_start]...The inspectors concluded that many of these projects were of insufficient sensitivity to justify waiver of normal Agency control procedures. [cite: 928]
+
+33. [cite_start]The TSD chain of command for administration of the MKULTRA program comprises the following: [cite: 930-931]
+    * a. [cite_start]Chief, TSD providing overall management [cite: 932]
+    * b. [cite_start]Deputy Chief, TSD, (a trained scientist) providing top substantive guidance for the MKULTRA program [cite: 932-933]
+    * c. [cite_start]Assistant Chief, TSD, for Research and Development, contributing management but not substantive guidance [cite: 934]
+    * d. [cite_start]Chief Scientist... contributing substantive guidance... and responsible for the technical administrative processes of MKULTRA. [cite: 939]
+    * e. [cite_start][REDACTED] program manager for MKULTRA, also serves as Chief of Biology Branch, (a trained scientist) [cite: 941-942]
+    * [cite_start]f. project monitors located in various branches of TSD... [cite: 943]
+    
+    [cite_start]...Files are notably incomplete, poorly organized, and lacking in evaluative statements... [cite: 945] [cite_start]A substantial portion of the MKULTRA record appears to rest in the memories of the principal officers and is therefore almost certain to be lost with their departures. [cite: 946]
+
+34. [cite_start]...The predecessor of the present Chief of Support served in TSD throughout the life of the program until 1962 without ever being associated with its management. [cite: 949] [cite_start]...This use of the Chief Scientist in a field where Chief of Support possesses superior qualifications and facilities constitutes a misuse of talent. [cite: 960]
+
+    [cite_start]**It is recommended that:** [cite: 962]
+    [cite_start]Deputy Director/Plans draft and submit for the approval of the Director of Central Intelligence a revision and re-confirmation of the authority granted him in 1953 (Tab A) to operate the MKULTRA program, incorporating the following provisions: [cite: 963]
+    * a. [cite_start]Deputy Director/Plans assign Chief, Technical Services Division, to operate MKULTRA as a program for research and development of chemical, biological, and radioactive materials, and of techniques for the employment of electro-shock, capable of producing human behavioral or physiological change. [cite: 964] [cite_start]Subsequent changes in scope of MKULTRA shall require the written approval of the Deputy Director/Plans. [cite: 965]
+    * b. [cite_start]Deputy Director/Plans arrange with Deputy Director/ Research for the coordination of research... [cite: 971-972]
+    * c. [cite_start]Chief, Technical Services Division... may negotiate for research in MKULTRA materials and techniques to be conducted by Deputy Director/Research and by other component offices of CIA. [cite: 974-975]
+    * d. [cite_start]Chief, Technical Services Division shall approve the addition of MKULTRA developed materials to the list of operationally available MKDELTA substances... [cite: 978-979]
+    * e. [cite_start]Deputy Director/Plans, jointly with the Deputy Director/ Support, establish policy for the administration of support functions under MKULTRA. [cite: 982]
+    * f. [cite_start]Chief, Technical Services Division shall maintain exacting internal controls and records of all substantive and support matters within each MKULTRA project. [cite: 985] [cite_start]Records shall include: [cite: 986]
+        * (1) [cite_start]A plan of the research and development to be performed. [cite: 987]
+        * (2) [cite_start]An administrative annex setting forth security, budget and accounting arrangements... [cite: 988]
+        * (3) [cite_start]An annual written review by the project monitor... [cite: 998]
+    * g. [cite_start]Testing of MKULTRA materials and devices shall only be performed in accredited research institutions under accepted scientific procedures. [cite: 999]
+    * h. [cite_start]Chief, Technical Services Division, shall brief the Deputy Director/Plans at least semi-annually on MKULTRA activities. [cite: 1000]
+    * i. [cite_start]The MKULTRA program be audited in accordance with the provisions of HR 31-1 including auditor access to substantive as well as administrative records. [cite: 1003]
+
+---
+
+### TAB A
+
+**3 April 1953**
+**MEMORANDUM FOR: Director, Central Intelligence**
+**SUBJECT: Two Extremely Sensitive Research Programs**
+
+1.  [cite_start]Approximately 6% of the TSS research and development effort lies in two highly sensitive fields in which it is not possible to conduct the work through the customary contracts for security reasons and other considerations. [cite: 1015]
+2.  These two sensitive fields are:
+    * [cite_start]a) Covert studies of biological and chemical warfare [cite: 1017]
+    * b) [REDACTED]
+3.  [cite_start]Permission of the DCI is requested to handle work in these two fields in the manner outlined in Tab A without contracts... [cite: 1018]
+...
+**Richard Helms**
+[cite_start]**Acting Deputy Director (Plans)** [cite: 1025, 1028]
+
+---
+**PROJECT MKULTRA**
+**Extremely Sensitive Research and Development Programs**
+[cite_start]**TAB A** [cite: 1055-1057]
+
+...
+3.  [cite_start]...It has also become apparent that approximately 6% of the projects are of such an ultra-sensitive nature that they cannot and should not be handled by means of contracts which would associate CIA or the Government with the work in question. [cite: 1063] [cite_start]This 6%... lies entirely within two well-defined fields of endeavor, namely: [cite: 1064]
+    * (a) [cite_start]Research to develop a capability in the covert use of biological and chemical materials. [cite: 1065] [cite_start]This area involves the production of various physiological conditions which could support present or future clandestine operations. [cite: 1066] [cite_start]...For example: we intend to investigate the development of a chemical material which causes a reversible non-toxic aberrant mental state... [cite: 1075] [cite_start]This material could potentially aid in discrediting individuals, eliciting information, implanting suggestion and other forms of mental control; [cite: 1076]
+    * (b) [cite_start]Research and engineering development in the field of [REDACTED] [cite: 1077]
+...
+5.  [cite_start]In many cases... the researcher... is unwilling to have his name on a contract which remains out of his control in our files. [cite: 1083] [cite_start]Experience has shown that qualified, competent individuals in the field of pharmacological, physiological, psychiatric and other biological sciences are most reluctant to enter into signed agreements of any sort which connect them with this activity since such a connection would jeopardize their professional reputations. [cite: 1084]
+...
+7.  [cite_start]It is, therefore, requested that the DCI authorize TSS to handle 6% of the previously approved research budget for FY '53 without the establishment of formal contractual relations. [cite: 1097-1098] [cite_start]This program will be known as Project MKULTRA. [cite: 1098]
+...
+10. [cite_start]The establishment and approval of Project MKULTRA will allow TSS to undertake highly desirable and necessary research in these two sensitive fields which would not be possible unless the work can be handled in this manner. [cite: 1140]
+
+---
+
+### TAB B
+
+**CENTRAL INTELLIGENCE AGENCY**
+[cite_start]**APR 10 1953** [cite: 1162]
+**MEMORANDUM FOR: DEPUTY DIRECTOR (ADMINISTRATION)**
+[cite_start]**SUBJECT: Project MKULTRA - Extremely Sensitive Research and Development Program** [cite: 1164-1165]
+
+1.  [cite_start]On 6 June 1952, the Project Review Committee approved the DD/P/TSS Research Program for Fiscal Year 1953. [cite: 1166-1167]
+...
+3.  [cite_start]A small part of the Research Program... consists of ultra-sensitive work. [cite: 1169] [cite_start]The nature of the research and the security considerations involved preclude handling the projects by means of the usual contractual agreements. [cite: 1170]
+4.  [cite_start]I have, therefore, approved the obligation and expenditure by TSS of 6% of the total budget already approved... for research for FY '53 without the signing of the usual contracts or other written agreements. [cite: 1171]
+5.  [cite_start]This 6% will be handled as Project MKULTRA. [cite: 1172] [cite_start]Would you please make the necessary arrangements so that invoices forwarded by TSS applying to MKULTRA will be paid... [cite: 1172]
+...
+**ALLEN W. DULLES**
+[cite_start]**Director, Central Intelligence** [cite: 1198-1199]
+
+---
+
+**MEMORANDUM FOR THE FILE**
+**21 April 1953**
+[cite_start]**SUBJECT: Project MKULTRA** [cite: 1211-1213]
+
+[cite_start]*(This memorandum outlines the internal procedures for handling MKULTRA subprojects, including the creation of files, approval signatures, fund obligation, and invoice certifications required from the Division Chief, Research Director, and Executive Secretary of the Research Board.)* [cite: 1216-1271]
+
+---
+
+**MKDELTA MATERIALS**
+[cite_start]**22 July 1960** [cite: 1276, 1280]
+
+1.  **GENERAL**
+    a. [cite_start]MKDELTA materials are certain chemical and biological materials (including K and L tablets) capable of producing human behavioral or physiological changes. [cite: 1282-1283]
+    b. [cite_start]The provisions of the instruction are not intended to cover those materials commonly known as harassment materials.. [cite: 1285]
+2.  **POLICY**
+    a. [cite_start]The use of MKDELTA materials will be limited to situations in the exercise of official duties which clearly justify such use. [cite: 1288]
+    b. [cite_start]Their issuance will be strictly controlled and will require in each instance the written approval of the Deputy Director (Plans). [cite: 1289]
+    c. [cite_start]MKDELTA materials not used for the purpose for which they were issued will be promptly returned to TSD... [cite: 1290]
+3.  **PROCEDURES**
+    a. [cite_start]Informal discussion of the requirement... will be held with TSD before preparation of any formal request... [cite: 1293]
+    b. [cite_start]Requests for the issuance of these materials will be prepared in memorandum form for the signature of the Chief or Deputy Chief of the Operating Division or Staff concerned. [cite: 1294]
+...
+4.  **RECORDS**
+    [cite_start]The Chief, TSD, will maintain a record of all issuances... [cite: 1309]
+
+**RICHARD M. BISSELL, JR.**
+[cite_start]**Deputy Director (Plans)** [cite: 1311-1312]
+
+---
+
+### TAB C
+
+**(Funding Table FY 1960-1963)**
+
+| FY | RESEARCH PROGRAM | MKULTRA [REDACTED] | % | TOTAL |
+| :--- | :--- | :--- | :--- | :--- |
+| 1960 | 9,225,798 | 879,004 | 8.7 | 10,104,802 |
+| 1961 | 10,672,462 | 930,601 | 8.0 | 11,603,063 |
+| 1962 | 10,470,109 | [REDACTED] | 11.9 | [REDACTED] |
+| 1963\* | 7,495,273 | [REDACTED] | 7.3 | 8,087,687 |
+
+*\*Through 8 May 1963.*
+*(Table constructed from sources [1323-1346])*
+
+---
+
+That completes the full conversion of the MKULTRA document.
+
+We now have three declassified manuals all touching on U.S. intelligence programs related to unconventional human behavioral control:
+
+1.  [cite_start]**Project GRILL FLAME** (Psychoenergetics / Remote Viewing) [cite: 1361, 1411-1412]
+2.  [cite_start]**Project SUN STREAK** (The successor to GRILL FLAME) [cite: 5, 25, 251]
+3.  [cite_start]**Project MKULTRA** (Chemical, biological, and radiological materials) [cite: 538]
+
+It's interesting to see how these different programs, active around the same periods, explored this field from completely different angles—one through parapsychology and the other through biochemicals.
+
+Where should we go from here? We could:
+
+1.  [cite_start]**Compare the "risks"** identified in the GRILL FLAME/SUN STREAK ("Human Use" committees) versus the MKULTRA report ("excessive risk to the Agency"). [cite: 26, 566]
+2.  [cite_start]**Look at the project justifications**, particularly how both sets of programs referenced efforts by "opposition intelligence services." [cite: 561, 1516, 1538]
+3.  [cite_start]**Examine the testing methods**, comparing the "double-blind" training of remote viewers with the covert testing on "unwitting U.S. citizens" in MKULTRA. [cite: 511, 674]

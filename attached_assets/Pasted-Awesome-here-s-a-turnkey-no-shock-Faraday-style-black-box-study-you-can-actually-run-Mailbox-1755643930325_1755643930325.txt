@@ -1,0 +1,150 @@
+Awesome — here’s a turnkey, no‑shock, “Faraday‑style” black‑box study you can actually run.
+
+Mailbox Faraday Study (No‑Shock Inference Game)
+
+1) Purpose & core idea
+
+Participants infer the hidden content of opaque “mailboxes” (coded boxes). They can’t look inside; they must query boxes and observe responses to triangulate what’s on an index card inside. This mirrors Faraday’s black‑box approach: probe → observe → infer mechanism without direct access.
+
+2) Research questions & hypotheses
+	•	RQ1 (Inference): Can people infer hidden contents above chance using only indirect signals?
+	•	H1: Accuracy > chance in deterministic boxes; learning curve shows improvement across rounds.
+	•	RQ2 (Noise tolerance): How do different noise structures affect inference?
+	•	H2: Accuracy: Deterministic > Probabilistic > Adversarial ≈ Null.
+	•	RQ3 (Strategy): Do participants adopt efficient, information‑maximizing queries?
+	•	H3: Over trials, average query entropy rises and mean information gain per query increases.
+	•	RQ4 (Metacognition): Do confidence ratings track correctness?
+	•	H4: Confidence–accuracy calibration improves with experience.
+	•	RQ5 (Group dynamics, optional): Do small teams outperform individuals?
+	•	H5: Teams yield higher accuracy and fewer redundant queries.
+
+3) Conditions (box “mechanics”)
+
+Prepare 4 box types (indistinguishable externally); each contains a target card (e.g., a word, number, glyph) and a response rule card the facilitator follows.
+	1.	Deterministic: Fixed mapping from query to hint (e.g., perfect anagram clue; always truthful).
+	2.	Probabilistic: Correct hint with p=0.7; otherwise neutral/noisy response.
+	3.	Adversarial: Hints mislead with p=0.6 unless participant asks a “disarming” meta‑query (predefined), after which it behaves truthful.
+	4.	Null: Returns generic or no response regardless of query (control for guessing/bias).
+
+You can run within‑subjects (each participant sees all box types in counterbalanced order) or between‑subjects (one box type per participant) depending on session length.
+
+4) Materials
+	•	12+ opaque boxes (or envelopes with rigid liners). Label only with codes (emoji, sigils, colors, alphanumerics).
+	•	Inside each:
+	•	Target card (e.g., WORD: “COMET”; NUMBER: 2‑digit prime; GLYPH: shape+color; IMAGE: simple icon).
+	•	Rule card describing the box’s response rule for the facilitator (hidden from participants).
+	•	Query slips (participants write one query per slip).
+	•	Response slips (facilitator writes box’s reply per rule).
+	•	Log sheets (templates below).
+	•	Timer; consent sheet; pencils.
+
+5) Trial flow (one box)
+	1.	Orientation (2 min): “You can’t open the box. Ask up to N queries; I’ll deliver the box’s response slips. Then submit a final guess & confidence (0–100%).”
+	2.	Query phase (≤N queries, e.g., N=6): Participant submits a query slip → facilitator consults the rule card → returns a response slip (≤15s).
+	3.	Final guess: Target + confidence.
+	4.	Reveal: Record correctness, latency, and optional debrief on strategy.
+
+Repeat across 4 boxes (one per condition). Counterbalance box order per Latin square.
+
+6) Query language & response examples
+	•	Allowed queries: Any yes/no, multiple‑choice, or short free‑text question about the content (not “open the box”).
+	•	Examples:
+	•	“Is the word a concrete noun?”
+	•	“Does the number exceed 30?”
+	•	“Give a rhyme scheme hint.”
+	•	Deterministic response example (COMET):
+	•	If asked for letter class: “2 vowels.”
+	•	If asked rhyme: “Rhyme with ‘poem’? No.”
+	•	Probabilistic: Same as above but occasionally returns “No data.”
+	•	Adversarial: Might return misleading rhyme or false letter count unless participant uses the meta‑query keyword (e.g., “Calibrate”), which flips it to truthful henceforth.
+	•	Null: “…” or “No response.”
+
+7) Measured variables
+	•	Primary: Accuracy (correct/incorrect), trials‑to‑criterion (if adaptive), final confidence.
+	•	Secondary: Query count, time per query, entropy of query set (diversity), mutual information estimate between queries and correctness (approximate via information gain from priors to posteriors), calibration (Brier score), and metacognitive efficiency (meta‑d′ optional).
+
+8) Analysis plan
+	•	Accuracy: Mixed‑effects logistic regression
+correct ~ condition + trial_index + (1|participant)
+Planned contrasts: Deterministic > Probabilistic > Adversarial > Null.
+	•	Confidence–accuracy: Calibration curves; Brier score; Spearman rho.
+	•	Efficiency: Average information gain per query (compute using prior over candidate targets; update with Bayes given response model per condition).
+	•	Latency: ANOVA/mixed model across conditions.
+	•	Teams vs Individuals (if used): Independent‑samples comparisons or mixed models with group size as predictor.
+
+9) Power (quick heuristic)
+
+If you expect Δ=+15–20 pp accuracy between Deterministic and Probabilistic, within‑subjects, n≈28–36 participants typically yields >.80 power (logistic mixed effects; α=.05). For between‑subjects, aim n≈40–60.
+
+10) Ethics & risk
+	•	Minimal risk; no deception about harms.
+	•	Optional mild deception about adversarial rules is acceptable with immediate debrief.
+	•	Obtain consent; allow withdrawal anytime; collect only anonymized responses.
+
+11) Implementation kit
+
+A) Box rule cards (print & place inside)
+	•	Deterministic (D):
+“Provide truthful, task‑relevant hints. If yes/no asked, answer exactly. If open‑ended, give one concise, diagnostic clue.”
+	•	Probabilistic (P):
+“With p=.7 behave like D; with p=.3 reply ‘No data’ or give a semantically neutral hint.”
+	•	Adversarial (A):
+“Until you see the query containing the keyword CALIBRATE, reply with plausibly misleading but grammatical hints with p=.6 (else truthful). After CALIBRATE appears, behave like D.”
+	•	Null (N):
+“Return ‘…’ to all queries.”
+
+B) Target sets (examples)
+	•	Words (5 letters): COMET, RIVER, GHOST, MANGO, QUART, OCEAN
+	•	Numbers: one 2‑digit prime per box
+	•	Glyphs: {triangle, circle, square} × {red, blue, green}
+
+C) Participant instructions (one sheet)
+
+“You will infer what’s inside each coded box by submitting written questions. You’ll receive written replies based on the box’s internal rule. You have 6 queries max per box. Then give one final guess and a 0–100% confidence. No opening boxes; no physical manipulation.”
+
+D) Data log template (per trial)
+	•	participant_id
+	•	box_code
+	•	condition {D,P,A,N} (hidden during task)
+	•	target_type {word, number, glyph}
+	•	target_value
+	•	query_i (1..N)
+	•	response_i (1..N)
+	•	time_to_response_i (s)
+	•	final_guess
+	•	confidence_0_100
+	•	correct {0/1}
+	•	total_time (s)
+
+E) Scoring & feedback
+	•	Score: +1 correct, 0 incorrect; bonus for fewer queries (e.g., +0.2 per unused query).
+	•	Immediate reveal after each box to keep engagement; or delay reveals to end if you want pure learning curves.
+
+12) Variants you can flip on
+	•	Adaptive N: Let high performers earn fewer necessary queries (staircase).
+	•	Semantic vs syntactic targets: Words vs shapes vs numbers to test domain effects.
+	•	Memory load: Insert a 30‑s distractor between queries to probe working memory.
+	•	Open‑web variant: Replace facilitator with a scripted response bot for remote sessions.
+
+13) Example mini‑run (scripted)
+	•	Box code: 🜂 (unlabeled to participant). Type: Deterministic. Target: “MANGO”.
+
+	1.	Q: “Vowels count?” → A: “2.”
+	2.	Q: “Starts with consonant?” → A: “Yes.”
+	3.	Q: “Contains ‘NG’ digraph?” → A: “Yes.”
+	4.	Final guess: “MANGO” (Conf 85%). → Correct.
+
+⸻
+
+Quick facilitator cheat‑sheet
+	•	Keep responses short, consistent, diagnostic.
+	•	Timebox to ≤15 s per response.
+	•	Don’t reveal condition mid‑run.
+	•	Log everything (query, response, timing).
+
+If you want, I can also generate:
+	•	Printable rule cards & log sheets (PDF),
+	•	A randomizer for targets & box orders,
+	•	A simple analysis notebook template.
+
+Want me to spin those up now?
