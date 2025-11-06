@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "ShadowOps offline command line experience"
 requires-python = ">=3.9"
 dependencies = [
-  "simple-term-menu>=1.6.4"
+  "rich>=13.7",
+  "simple-term-menu>=1.6.4",
+  "typer>=0.9"
 ]
 
 [project.optional-dependencies]
@@ -12,6 +14,7 @@ audio = ["simpleaudio>=1.0.4"]
 
 [project.scripts]
 shadowops = "cli.main:main"
+shadowops-rich = "cli.rich_app:app"
 
 [build-system]
 requires = ["setuptools>=68", "wheel"]

@@ -42,27 +42,57 @@ def show_manual_tree() -> None:
     print()
 
 
-def launch_visual_neural_looper() -> None:
-    """Run the Metatron visual neural looper in a subprocess."""
+def launch_visual_neural_looper(
+    *,
+    pulse_hz: float | None = None,
+    speed_trim: float | None = None,
+    scene_seconds: float | None = None,
+    wait: bool = True,
+) -> subprocess.Popen[bytes] | None:
+    """Run the Metatron visual neural looper in a subprocess.
+
+    Parameters
+    ----------
+    pulse_hz:
+        Optional override for the central pulse frequency.
+    speed_trim:
+        Optional override for animation speed multiplier.
+    scene_seconds:
+        Auto-exit duration for the visualiser. ``None`` keeps the default runtime.
+    wait:
+        When ``True`` (default) blocks until the subprocess exits. When ``False``
+        returns the :class:`subprocess.Popen` handle for asynchronous control.
+    """
 
     try:
         __import__("pygame")
     except ModuleNotFoundError:
         print("The visual neural looper requires the 'pygame' package to be installed.")
         print("Install it with 'pip install pygame' and try again.")
-        return
+        return None
 
     script_path = Path(__file__).with_name("metatron_neuro_wheel_fluid.py")
     if not script_path.exists():
         print(f"Visual neural looper script not found: {script_path}")
-        return
+        return None
 
     print("Launching the Metatron Neuro Wheel visualizer...\n")
+    args = [sys.executable, str(script_path)]
+    if pulse_hz is not None:
+        args.extend(["--pulse-hz", str(pulse_hz)])
+    if speed_trim is not None:
+        args.extend(["--speed-trim", str(speed_trim)])
+    if scene_seconds is not None:
+        args.extend(["--scene-seconds", str(scene_seconds)])
     try:
-        subprocess.run([sys.executable, str(script_path)], check=True)
+        if wait:
+            subprocess.run(args, check=True)
+            return None
+        return subprocess.Popen(args)
     except subprocess.CalledProcessError as exc:
         print("The visualizer exited with an error.")
         print(f"Return code: {exc.returncode}")
+    return None
 
 
 def run() -> None:
