@@ -17,5 +17,8 @@ shadowops = "cli.main:main"
 shadowops-rich = "cli.rich_app:app"
 
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=65", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["cli"]
