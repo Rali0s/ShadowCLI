@@ -213,9 +213,13 @@ class ShadowOpsApp(App):
 def main(argv: Optional[Iterable[str]] = None) -> int:
     """Entry point used by the console script."""
 
-    with ShadowOpsApp() as app:
+    init_kwargs = {}
+    if argv is not None:
+        init_kwargs["argv"] = list(argv)
+
+    with ShadowOpsApp(**init_kwargs) as app:
         try:
-            app.run(argv=argv)
+            app.run()
         except KeyboardInterrupt:  # pragma: no cover - interactive guard
             CONSOLE.print("\n[bold red]Interrupted by user.[/bold red]")
             return 130
