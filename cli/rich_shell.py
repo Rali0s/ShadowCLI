@@ -10,6 +10,11 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
+try:  # pragma: no cover - optional dependency guard
+    from simple_term_menu import TerminalMenu
+except ImportError:  # pragma: no cover - fallback if dependency missing
+    TerminalMenu = None  # type: ignore[assignment]
+
 from .navigation import ENTRIES, NavigationEntry
 
 __all__ = ["RichMenuShell", "main"]
@@ -63,6 +68,38 @@ class RichMenuShell:
 
     def _render_menu(self) -> None:
         self.console.print(self._menu_panel())
+
+    def _menu_title(self) -> str:
+        """Render the Rich panel to a captured string for terminal menus."""
+
+        with self.console.capture() as capture:
+            self.console.print(self._menu_panel())
+        return capture.get()
+
+    def _terminal_menu_entries(self) -> list[str]:
+        entries = [f"{option.index}. {option.label}" for option in self._options]
+        entries.append("Run all modules")
+        entries.append("Quit ShadowOps shell")
+        return entries
+
+    def _show_terminal_menu(self) -> Optional[int]:
+        """Display the simple-term-menu selector when available."""
+
+        if TerminalMenu is None:
+            return None
+
+        menu = TerminalMenu(
+            self._terminal_menu_entries(),
+            title=self._menu_title(),
+            clear_screen=True,
+            cycle_cursor=True,
+            menu_cursor_style=("fg_yellow", "bold"),
+            menu_highlight_style=("fg_cyan", "bold"),
+        )
+        selected = menu.show()
+        if selected is None:
+            return None
+        return int(selected)
 
     # ------------------------------------------------------------------
     # Command execution
@@ -178,8 +215,8 @@ class RichMenuShell:
         self._run_entry(option, pause=False)
         return True
 
-    def loop(self) -> None:
-        """Prompt the user repeatedly until they choose to exit."""
+    def _fallback_loop(self) -> None:
+        """Text-based prompt loop when simple-term-menu is unavailable."""
 
         while True:
             self._render_menu()
@@ -204,6 +241,31 @@ class RichMenuShell:
                 )
                 continue
 
+            if self._run_entry(option):
+                self.console.print("\n[bold magenta]Goodbye![/bold magenta]")
+                return
+
+    def loop(self) -> None:
+        """Prompt the user repeatedly until they choose to exit."""
+
+        if TerminalMenu is None:
+            self._fallback_loop()
+            return
+
+        while True:
+            selection = self._show_terminal_menu()
+            if selection is None:
+                self.console.print("\n[bold magenta]Goodbye![/bold magenta]")
+                return
+
+            if selection == len(self._options):
+                self.run_all()
+                continue
+            if selection == len(self._options) + 1:
+                self.console.print("\n[bold magenta]Goodbye![/bold magenta]")
+                return
+
+            option = self._options[selection]
             if self._run_entry(option):
                 self.console.print("\n[bold magenta]Goodbye![/bold magenta]")
                 return

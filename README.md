@@ -12,7 +12,9 @@ shadowops-rich --help
 
 ## Rich Persistent Shell
 
-Prefer a classic looping menu? The Rich-powered shell keeps the toolkit running until you exit while rendering the menu inline:
+Prefer a classic looping menu? The Rich-powered shell now combines Rich with
+[`simple-term-menu`](https://github.com/IngoMeyer441/simple-term-menu) so you
+can navigate with the arrow keys while the menu remains on screen:
 
 ```bash
 pip install -e .
@@ -22,7 +24,9 @@ shadowops-rich shell --module 2
 shadowops-rich shell --run-all
 ```
 
-Use `--module` with either a number or a module name to jump directly into a tool, or `--run-all` to execute each module sequentially.
+Use `--module` with either a number or a module name to jump directly into a
+tool, or `--run-all` to execute each module sequentially. Press `q` at any
+time while the menu is focused to exit instantly.
 
 ### Manual navigation
 
