@@ -10,15 +10,16 @@ pip install -e .
 shadowops-rich --help
 ```
 
-## Cement Persistent Shell
+## Rich Persistent Shell
 
-Prefer a classic looping menu? The [Cement](https://builtoncement.com/) harness keeps the toolkit running until you exit:
+Prefer a classic looping menu? The Rich-powered shell keeps the toolkit running until you exit while rendering the menu inline:
 
 ```bash
 pip install -e .
-shadowops-cement          # launches the interactive loop
-shadowops-cement --list   # show modules without entering the loop
-shadowops-cement --module 2
+shadowops-rich shell          # launches the interactive loop
+shadowops-rich shell --list   # show modules without entering the loop
+shadowops-rich shell --module 2
+shadowops-rich shell --run-all
 ```
 
 Use `--module` with either a number or a module name to jump directly into a tool, or `--run-all` to execute each module sequentially.

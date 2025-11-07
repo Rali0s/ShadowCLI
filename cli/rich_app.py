@@ -23,6 +23,7 @@ from .audio.generators import (
 )
 from .audio.presets import FrequencyPreset, iter_presets
 from .ncebg import launch_visual_neural_looper
+from .rich_shell import RichMenuShell
 
 __all__ = ["app"]
 
@@ -189,6 +190,53 @@ def list_presets() -> None:
             padding=(1, 1),
         )
     )
+
+
+# ---------------------------------------------------------------------------
+# Persistent shell
+# ---------------------------------------------------------------------------
+
+
+@app.command("shell")
+def launch_shell(
+    module: Optional[str] = typer.Option(
+        None,
+        "--module",
+        "-m",
+        help="Run a single module by number or name and exit.",
+    ),
+    run_all: bool = typer.Option(
+        False,
+        "--run-all",
+        "-r",
+        help="Run every module sequentially and exit.",
+    ),
+    list_only: bool = typer.Option(
+        False,
+        "--list",
+        help="List available modules and exit without starting the loop.",
+    ),
+) -> None:
+    """Launch the Rich-powered persistent menu shell."""
+
+    shell = RichMenuShell(console)
+
+    if list_only:
+        shell.list_modules()
+        return
+    if run_all:
+        shell.run_all()
+        return
+    if module:
+        if not shell.run_selection(module):
+            raise typer.Exit(code=2)
+        return
+
+    try:
+        shell.loop()
+    except KeyboardInterrupt:  # pragma: no cover - interactive guard
+        console.print("\n[bold red]Interrupted by user.[/bold red]")
+        raise typer.Exit(code=130)
 
 
 # ---------------------------------------------------------------------------
