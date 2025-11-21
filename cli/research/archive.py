@@ -7,6 +7,9 @@ from dataclasses import dataclass
 from typing import Iterable, Sequence
 
 from ..data.research_documents import DOCUMENTS, ResearchDocument, iter_by_tier
+from pathlib import Path
+import tempfile
+from ..manuals import display_manual_panel
 from ..data.user import DEMO_USER
 from ..menu import Menu, MenuItem
 from ..utils.text import format_table, get_terminal_width, wrap_paragraphs
@@ -110,12 +113,34 @@ def run() -> None:
             [
                 MenuItem(
                     doc.title,
-                    lambda doc=doc: print(_describe_document(doc) + "\n"),
+                    # open the document in the shared panel viewer by writing a temp file
+                    lambda doc=doc: _open_doc_in_panel(doc),
                 )
                 for doc in documents
             ],
         )
         menu.show()
+
+
+    def _open_doc_in_panel(doc: ResearchDocument) -> None:
+        # Compose a small markdown file including title and metadata + content
+        md = f"# {doc.title}\n\n"
+        md += f"**Classification:** {doc.classification}  \n"
+        md += f"**Access:** {doc.access_level}  \n"
+        md += f"**Author:** {doc.author}  \n\n"
+        md += doc.content or ""
+
+        tf = tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".md")
+        try:
+            tf.write(md)
+            tf.flush()
+            tf.close()
+            display_manual_panel(Path(tf.name))
+        finally:
+            try:
+                Path(tf.name).unlink()
+            except Exception:
+                pass
 
     def show_tag_cloud() -> None:
         documents = _filter_documents(tier_documents, state)

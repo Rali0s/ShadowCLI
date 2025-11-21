@@ -1,0 +1,7 @@
+rich>=13.7
+simple-term-menu>=1.6.4
+typer>=0.9
+cement>=3.0
+
+[audio]
+simpleaudio>=1.0.4

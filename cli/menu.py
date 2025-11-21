@@ -49,18 +49,26 @@ class Menu:
         return int(selected_index)
 
     def _fallback_prompt(self, options: List[str]) -> Optional[int]:
-        print(self.title)
-        for idx, option in enumerate(options, start=1):
-            print(f"{idx}. {option}")
-        raw = input("Select an option (blank to exit): ").strip()
-        if not raw:
-            return None
+        # Prefer a Rich-rendered prompt when available for a nicer fallback UI.
         try:
-            value = int(raw)
-        except ValueError:
-            print("Invalid selection. Please enter a number.")
-            return None
-        if value < 1 or value > len(options):
-            print("Selection out of range.")
-            return None
-        return value - 1
+            from .rich_menu import choice
+
+            selected = choice(options, title=self.title, footer="(blank to exit)")
+            return selected
+        except Exception:
+            # Fall back to the simple text prompt if Rich isn't available or an error occurs.
+            print(self.title)
+            for idx, option in enumerate(options, start=1):
+                print(f"{idx}. {option}")
+            raw = input("Select an option (blank to exit): ").strip()
+            if not raw:
+                return None
+            try:
+                value = int(raw)
+            except ValueError:
+                print("Invalid selection. Please enter a number.")
+                return None
+            if value < 1 or value > len(options):
+                print("Selection out of range.")
+                return None
+            return value - 1

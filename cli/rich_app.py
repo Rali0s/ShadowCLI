@@ -58,7 +58,7 @@ def _manual_dirs() -> Iterable[Path]:
     return sorted((path for path in root.iterdir() if path.is_dir()), key=lambda p: p.name.lower())
 
 
-@manuals_app.command("list")
+@manuals_app.command("list", short_help="List available manuals")
 def list_manuals() -> None:
     """Display the manuals hierarchy using a Rich tree."""
 
@@ -93,10 +93,15 @@ def list_manuals() -> None:
     )
 
 
-@manuals_app.command("read")
+@manuals_app.command("read", short_help="Read a manual section")
 def read_manual(
     manual_id: str = typer.Argument(..., help="Directory name of the manual, e.g. 01_SUN_STREAK."),
     section_file: str = typer.Argument(..., help="Markdown file name to open, e.g. 1.1_Overview.md."),
+    reader_mode: Optional[str] = typer.Option(
+        None,
+        "--reader-mode",
+        help="Reader mode to use: 'ansi' for colored ANSI pager, 'curses' for the curses-based pager. Auto by default.",
+    ),
 ) -> None:
     """Render a manual section using Rich markdown."""
 
@@ -112,6 +117,19 @@ def read_manual(
             )
         )
         raise typer.Exit(code=1)
+
+    # Prefer the interactive curses-based e-reader for TTYs (vim-like keys).
+    try:
+        import sys
+
+        if sys.stdout.isatty():
+            from .ereader import display_markdown
+
+            display_markdown(path, mode=reader_mode)
+            return
+    except Exception:
+        # fall back to the Rich panel renderer when curses/ereader is unavailable
+        pass
 
     content = path.read_text(encoding="utf-8")
     title = manual_id.replace("_", " ")
@@ -150,7 +168,7 @@ def _module_tree() -> Tree:
     return tree
 
 
-@app.command("modules")
+@app.command("modules", short_help="Show available toolkit modules")
 def show_modules() -> None:
     """Display an overview tree of the available toolkit modules."""
 
@@ -177,7 +195,7 @@ def _build_preset_table(presets: Iterable[FrequencyPreset]) -> Table:
     return table
 
 
-@app.command("presets")
+@app.command("presets", short_help="List audio frequency presets")
 def list_presets() -> None:
     """Show the catalogue of audio lab frequency presets."""
 
@@ -237,7 +255,47 @@ def _render_sync_summary(config: SyncConfiguration) -> None:
     )
 
 
-@app.command("neuro-sync")
+def _interactive_choose_preset_or_carrier() -> tuple[float, float, str] | None:
+    """Interactively prompt the user to choose a preset or enter a custom carrier/beat.
+
+    Returns (carrier_hz, beat_hz, label) or None if the user cancels or input is invalid.
+    """
+    presets = list(iter_presets())
+    print("Available presets:")
+    for idx, p in enumerate(presets, start=1):
+        beat = f"{p.beat_hz} Hz" if p.beat_hz else "—"
+        print(f"{idx}. {p.name} — {p.carrier_hz} Hz carrier, {beat} — {p.description}")
+    try:
+        raw = input("Select preset number, 'c' for custom tone, or ENTER to cancel: ").strip()
+    except EOFError:
+        return None
+    if not raw:
+        return None
+    if raw.lower() == "c":
+        try:
+            carrier_raw = input("Carrier frequency (Hz): ").strip()
+            carrier = float(carrier_raw)
+        except Exception:
+            print("Invalid carrier frequency.")
+            return None
+        try:
+            beat_raw = input("Binaural beat (Hz, 0 for single tone) [0]: ").strip()
+            beat = float(beat_raw) if beat_raw else 0.0
+        except Exception:
+            beat = 0.0
+        return carrier, beat, "Custom"
+    try:
+        idx = int(raw)
+        if 1 <= idx <= len(presets):
+            p = presets[idx - 1]
+            return p.carrier_hz, p.beat_hz or 0.0, p.name
+    except Exception:
+        pass
+    print("Invalid selection.")
+    return None
+
+
+@app.command("neuro-sync", short_help="Launch audio + visual neuro-sync session")
 def neuro_sync(
     preset: Optional[str] = typer.Option(
         None,
@@ -268,6 +326,26 @@ def neuro_sync(
         "--visual/--no-visual",
         help="Launch the Metatron Neuro Wheel visualiser alongside the audio.",
     ),
+    scale_up: bool = typer.Option(
+        False,
+        "--scale-up",
+        help="Allow upscaling the visuals when the display is larger than the default size.",
+    ),
+    no_scale_font: bool = typer.Option(
+        False,
+        "--no-scale-font",
+        help="Don't scale font sizes when adjusting visuals to fit the screen.",
+    ),
+    fill_factor: Optional[float] = typer.Option(
+        None,
+        "--fill-factor",
+        help="Fraction of the window to use for the wheel (0.1 - 1.0).",
+    ),
+    fullscreen: bool = typer.Option(
+        False,
+        "--fullscreen",
+        help="Launch the Metatron visualiser in fullscreen mode.",
+    ),
 ) -> None:
     """Launch the audio lab tone generator in sync with the NCNGB visual module."""
 
@@ -288,17 +366,22 @@ def neuro_sync(
         label = preset_obj.name
     else:
         if carrier is None:
-            console.print(
-                Panel(
-                    "Provide either a preset name or a carrier frequency.",
-                    title="Missing configuration",
-                    border_style="red",
+            # Try interactive selection: allow user to pick a preset or enter a custom carrier/beat.
+            choice = _interactive_choose_preset_or_carrier()
+            if choice is None:
+                console.print(
+                    Panel(
+                        "Provide either a preset name or a carrier frequency.",
+                        title="Missing configuration",
+                        border_style="red",
+                    )
                 )
-            )
-            raise typer.Exit(code=1)
-        carrier_hz = carrier
-        beat_hz = beat or 0.0
-        label = "Custom"
+                raise typer.Exit(code=1)
+            carrier_hz, beat_hz, label = choice
+        else:
+            carrier_hz = carrier
+            beat_hz = beat or 0.0
+            label = "Custom"
 
     config = SyncConfiguration(label=label, carrier_hz=carrier_hz, beat_hz=beat_hz, duration=duration, volume=volume)
     _render_sync_summary(config)
@@ -320,6 +403,10 @@ def neuro_sync(
         process = launch_visual_neural_looper(
             pulse_hz=config.pulse_hz,
             scene_seconds=scene_seconds or config.duration,
+            scale_up=scale_up,
+            no_scale_font=no_scale_font,
+            fill_factor=fill_factor,
+            fullscreen=fullscreen,
             wait=False,
         )
         if process is None:

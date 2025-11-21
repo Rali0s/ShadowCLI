@@ -1,0 +1,4 @@
+[console_scripts]
+shadowops = cli.main:main
+shadowops-cement = cli.cement_app:main
+shadowops-rich = cli.rich_app:app

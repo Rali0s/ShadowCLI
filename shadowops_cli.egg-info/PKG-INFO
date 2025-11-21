@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: shadowops-cli
+Version: 0.1.0
+Summary: ShadowOps offline command line experience
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: rich>=13.7
+Requires-Dist: simple-term-menu>=1.6.4
+Requires-Dist: typer>=0.9
+Requires-Dist: cement>=3.0
+Provides-Extra: audio
+Requires-Dist: simpleaudio>=1.0.4; extra == "audio"
+Dynamic: license-file

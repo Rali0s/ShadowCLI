@@ -6,7 +6,13 @@ import math, random, time, sys
 import pygame
 
 # ---------------- CONFIG (unchanged basics) ----------------
-W,H = 1600,1000
+DEFAULT_W, DEFAULT_H = 1600, 1000
+W, H = DEFAULT_W, DEFAULT_H
+# Scaling options (can be overridden via CLI)
+SCALE_UP = False        # allow scaling > 1.0 when True
+SCALE_FONT = True       # whether font sizes scale with visuals
+FILL_FACTOR = 1.0       # fraction of available window used by the wheel (0.0-1.0)
+FULLSCREEN = False      # launch fullscreen when True
 BG  = (5,5,8)
 FG  = (210,30,30)
 
@@ -65,6 +71,27 @@ def _parse_cli_args() -> argparse.Namespace:
         default=None,
         help="Automatically exit after the specified number of seconds (<=0 disables).",
     )
+    parser.add_argument(
+        "--scale-up",
+        action="store_true",
+        help="Allow upscaling the visuals when the display is larger than the default size.",
+    )
+    parser.add_argument(
+        "--no-scale-font",
+        action="store_true",
+        help="Don't scale font sizes when adjusting visuals to fit the screen.",
+    )
+    parser.add_argument(
+        "--fill-factor",
+        type=float,
+        default=1.0,
+        help="Fraction of the window to use for the wheel (0.0 - 1.0).",
+    )
+    parser.add_argument(
+        "--fullscreen",
+        action="store_true",
+        help="Launch the visualiser in fullscreen mode.",
+    )
     return parser.parse_args()
 
 
@@ -78,15 +105,64 @@ def _apply_cli_overrides() -> None:
     if args.scene_seconds is not None:
         value = float(args.scene_seconds)
         SCENE_SECONDS = value if value > 0 else 0
+    # scaling / display related overrides
+    global SCALE_UP, SCALE_FONT, FILL_FACTOR, FULLSCREEN
+    if getattr(args, "scale_up", False):
+        SCALE_UP = True
+    if getattr(args, "no_scale_font", False):
+        SCALE_FONT = False
+    if getattr(args, "fill_factor", None) is not None:
+        try:
+            v = float(args.fill_factor)
+            if v > 0:
+                FILL_FACTOR = max(0.1, min(1.0, v))
+        except Exception:
+            pass
+    if getattr(args, "fullscreen", False):
+        FULLSCREEN = True
 
 
 _apply_cli_overrides()
 
 pygame.init()
-screen=pygame.display.set_mode((W,H), pygame.SCALED|pygame.RESIZABLE)
+# create the window; respect fullscreen flag if requested
+if FULLSCREEN:
+    # request true fullscreen
+    screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+else:
+    screen = pygame.display.set_mode((W, H), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("Metatron Neuro Wheel — FLUID Lines & Rays")
 clock=pygame.time.Clock()
-font_small=pygame.font.SysFont("Arial",22)
+# Detect actual display/window size and scale visuals to fit the screen while preserving
+# the original visual proportions. This makes the visualiser adapt to smaller/larger
+# displays automatically.
+det_w, det_h = screen.get_size()
+# Compute scale from actual window size. Allow upscaling only when SCALE_UP is True.
+raw_scale = min(det_w / DEFAULT_W, det_h / DEFAULT_H)
+if not SCALE_UP:
+    scale = min(raw_scale, 1.0)
+else:
+    # clamp upscaling to a reasonable max to avoid huge visuals
+    scale = max(min(raw_scale, 2.0), 0.5)
+
+# Apply fill factor to wheel size (how much of the window the wheel should occupy)
+scale *= FILL_FACTOR
+
+# Update logical canvas size and derived geometry
+W, H = det_w, det_h
+# scale the base radius and related sizes so the wheel fits the window
+BASE_RADIUS = int(320 * scale)
+INNER_R = int(BASE_RADIUS * 0.60)
+MID_R = int(BASE_RADIUS * 0.78)
+OUTER_R = BASE_RADIUS
+INNER_SIZE = max(6, int(12 * scale))
+MID_SIZE = max(6, int(12 * scale))
+OUTER_SIZE = max(8, int(14 * scale))
+# adjust font size unless disabled
+if SCALE_FONT:
+    font_small = pygame.font.SysFont("Arial", max(12, int(22 * scale)))
+else:
+    font_small = pygame.font.SysFont("Arial", 22)
 
 def cxcy(): return screen.get_width()//2, screen.get_height()//2
 def ring_points(cx,cy,r,n,phase=0.0):
@@ -310,7 +386,7 @@ def run():
 
     def hud():
         return font_small.render(
-            f"ESC quit  R restart  SPACE emergency   +/- pulse {CENTER_PULSE_HZ:.1f}Hz   [ / ] speed {SPEED_TRIM:.2f}   1/2/3 overlays   L rays",
+            f"Q/ESC quit  R restart  SPACE emergency   +/- pulse {CENTER_PULSE_HZ:.1f}Hz   [ / ] speed {SPEED_TRIM:.2f}   1/2/3 overlays   L rays",
             True,(120,120,135))
     hint=hud()
 
@@ -321,7 +397,9 @@ def run():
         for e in pygame.event.get():
             if e.type==pygame.QUIT: pygame.quit(); sys.exit(0)
             if e.type==pygame.KEYDOWN:
-                if e.key==pygame.K_ESCAPE: pygame.quit(); sys.exit(0)
+                # allow users to press 'q' or ESC to quit cleanly
+                if e.key==pygame.K_ESCAPE or e.key==pygame.K_q:
+                    pygame.quit(); sys.exit(0)
                 elif e.key in (pygame.K_PLUS, pygame.K_EQUALS): CENTER_PULSE_HZ=min(24.0,CENTER_PULSE_HZ+0.5); hint=hud()
                 elif e.key in (pygame.K_MINUS, pygame.K_UNDERSCORE): CENTER_PULSE_HZ=max(1.0,CENTER_PULSE_HZ-0.5); hint=hud()
                 elif e.key==pygame.K_LEFTBRACKET: SPEED_TRIM=max(0.6,SPEED_TRIM-0.05); hint=hud()
@@ -371,9 +449,10 @@ def run():
         if band_name=="theta" and sub_phase=="done" and time_in_band>=band_dur:
             schedule_index=0; band_start_t=now; sub_phase=None; burst_until=now+BURST_LEN
 
-        phi_inner=2*math.pi*inner_hz*(now-start)
-        phi_mid  =2*math.pi*mid_hz  *(now-start)
-        phi_outer=2*math.pi*outer_hz*(now-start)
+        # inner wheel rotates in the opposite direction to the mid wheel
+        phi_inner = -2 * math.pi * inner_hz * (now - start)
+        phi_mid = 2 * math.pi * mid_hz * (now - start)
+        phi_outer = 2 * math.pi * outer_hz * (now - start)
 
         # DRAW
         screen.fill(BG)
